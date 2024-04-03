@@ -1,5 +1,5 @@
-Plugin_QGIS / plugin_qgis : 
-			    a Plugin in Python OOP for the geographic information system (GIS) software application QGIS
+Plugin_QGIS : 
+a Plugin in Python OOP for the geographic information system (GIS) software application QGIS
 
 - Beschreibung : Dieses Plugin erstellt ausgehend von zwei Input-Files zwei Puffer-Layer, 
 		 fügt beide zusammen (merge) und löst das Ergebnis optional auf
@@ -8,7 +8,7 @@ Plugin_QGIS / plugin_qgis :
 	(README.md & GUI-preview_GeoWerkzeug_plugin.PNG sind optional) 
   und in QGIS unter Erweiterungen aktivieren 
 
-- werkzeug.py : fährt das Plugin hoch/herunter, ruft die GUI auf 
+- werkzeug.py : fährt das Plugin hoch/herunter, ruft die GUI auf ; 
   werkzeug_funktionalitaet.py : die eigentliche Funktionalität (GUI von Datei laden, Puffer, Merge, Dissolve, usw.) 
 
 - GUI mit Qt Designer, PyQt
