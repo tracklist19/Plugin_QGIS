@@ -8,7 +8,7 @@ a Plugin in Python OOP for the geographic information system (GIS) software appl
 	       (README.md & GUI-preview_GeoWerkzeug_plugin.PNG sind optional) 
   und in QGIS unter 'Erweiterungen' aktivieren 
 
-- werkzeug.py : fährt das Plugin hoch/herunter, ruft die GUI auf 
+- werkzeug.py : fährt das Plugin hoch/herunter, ruft die GUI auf; 
   werkzeug_funktionalitaet.py : die eigentliche Funktionalität (GUI von Datei laden, Puffer, Merge, Dissolve, usw.) 
 
 - GUI mit Qt Designer, PyQt
