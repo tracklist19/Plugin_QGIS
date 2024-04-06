@@ -1,0 +1,8 @@
+[general]
+name=GeoWerkzeug
+email=testplugin@example.com
+author= Isa, tracklist19
+qgisMinimumVersion=3.0
+description=Puffern, Mergen, Dissolven
+about=Dieses Plugin erstellt zwei Puffer, fügt diese zusammen (merge) und löst das Ergebnis optional auf
+version=version 0.1
