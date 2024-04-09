@@ -29,7 +29,7 @@ class GeoWerkzeug:
         self.iface.removePluginMenu('GeoWerkzeug', self.startButton)
 
     def maskeAufrufen(self):
-        self.gui = MaskeUndFunktionalitaet(self.iface.mainWindow())     # Verknuepfung mit QGIS-Fenster
+        self.gui = MaskeUndFunktionalitaet(self.iface.mainWindow())                 # Verknuepfung mit QGIS-Fenster
         self.gui.show()
 
 
