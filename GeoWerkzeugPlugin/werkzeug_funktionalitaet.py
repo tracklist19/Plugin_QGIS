@@ -95,7 +95,7 @@ class MaskeUndFunktionalitaet(WIDGET, BASE):              	                # Kla
         # Merge vorbereiten
         outputPathMerge = os.path.join(pathOutput, 'merge.shp')
 
-        parameterMerge = {											# Parameter aus der Konsolen-Hilfe
+        parameterMerge = {							        # Parameter aus der Konsolen-Hilfe
 
                 'LAYERS': [pathOutputBuffer1, pathOutputBuffer2],
                 'OUTPUT': outputPathMerge
