@@ -5,21 +5,21 @@ from PyQt5.QtWidgets import *
 from PyQt5 import uic
 import os
 from qgis.core import *
-import processing                                                                # GeoVerabeitung
+import processing                                                               # GeoVerabeitung
 
 
 # Pfad zur .ui-Datei
 pluginPath = os.path.dirname(__file__)
 pathUi = os.path.join(pluginPath, 'geowerkzeug.ui')
 
-WIDGET, BASE = uic.loadUiType(pathUi)                                            # um GUI der MUF-Klasse zu uebergeben -> WIDGET: Klasse die die GUI enthält ; BASE: von Qt benötigte Generelle Klassen
+WIDGET, BASE = uic.loadUiType(pathUi)                                           # um GUI der MUF-Klasse zu uebergeben -> WIDGET: Klasse die die GUI enthält ; BASE: von Qt benötigte Generelle Klassen
 
 
 class MaskeUndFunktionalitaet(WIDGET, BASE):              	                    # Klasse erbt Klassen WIDGET, BASE
 
     def __init__(self, parent):                           	                    # bei Instanziierung: QGIS-mainWindow wird dem Parameter parent übergeben -> innerhalb dessen wird dann Plugin-GUI angezeigt
         QDialog.__init__(self, parent)
-        self.setupUi(self)									                    # setupUi weist der Klasse alle objectNames der GUI zu -> GUI-Definitionen werden ansprechbar
+        self.setupUi(self)                                                    # setupUi weist der Klasse alle objectNames der GUI zu -> GUI-Definitionen werden ansprechbar
 
         # Buttons mit Methoden verknuepfen
         self.btn_cancel.clicked.connect(self.closePlugin)
@@ -95,7 +95,7 @@ class MaskeUndFunktionalitaet(WIDGET, BASE):              	                    #
         # Merge vorbereiten
         outputPathMerge = os.path.join(pathOutput, 'merge.shp')
 
-        parameterMerge = {											            # Parameter aus der Konsolen-Hilfe
+        parameterMerge = {											        # Parameter aus der Konsolen-Hilfe
 
                 'LAYERS': [pathOutputBuffer1, pathOutputBuffer2],
                 'OUTPUT': outputPathMerge
